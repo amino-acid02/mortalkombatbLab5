@@ -26,7 +26,7 @@ public class CharacterAction {
     private final int experience_for_next_level[] = {40, 90, 180, 260, 410, 1000};
     private final int kind_fight[][] = {{1, 0}, {1, 1, 0}, {0, 1, 0}, {1, 1, 1, 1}};
 
-    private Player enemyes[] = new Player[6];
+    private Player enemyes[] = new Player[5];
     EnemyFabric fabric = new EnemyFabric();
     private Player enemy = null;
 
