@@ -97,6 +97,7 @@ public class Fight {
            игрок защищается (a == 0) -> босс восстанавливает 50% от текущего урона
             игрок защищается (a == 1) -> босс получает двойной урон
             */
+            
             ((ShaoKahn)enemy).changeHealthAttemptRes(a, human.getDamage());
             
             enemy.SetRecoveryAttempt(false);

@@ -18,7 +18,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.mycompany.maven_Lab5_mortalkombat.maven_lab5_mortalkombat.Maven_Lab5_mortalkombat</mainClass>
+                  <mainClass>com.mycompany.maven_lab5_mortalkombat.Maven_Lab5_mortalkombat</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -29,8 +29,9 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
+          <mainClass>com.mycompany.maven_lab5_mortalkombat.Maven_Lab5_mortalkombat</mainClass>
           <includes>
-            <include>Results.xlsx</include>
+            <include>./Results.xlsx</include>
           </includes>
         </configuration>
       </plugin>
@@ -44,9 +45,8 @@
     </plugins>
   </build>
   <properties>
-    <maven.compiler.target>19</maven.compiler.target>
-    <exec.mainClass>com.mycompany.maven_Lab5_mortalkombat.maven_lab5_mortalkombat.Maven_Lab5_mortalkombat</exec.mainClass>
-    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+    <maven.compiler.source>18</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
