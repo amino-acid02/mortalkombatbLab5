@@ -1103,7 +1103,7 @@ public class JFrames extends javax.swing.JFrame {
         BackgroundFrame.setVisible(rootPaneCheckingEnabled);
         BackgroundFrame.setSize(1000,600);
         
-        ImageIcon img = new ImageIcon("IMGSource/MainHero.jpg");
+        ImageIcon img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/MainHero.jpg");
         HumanLabelImg.setIcon(imfixer.getScaledImage(img.getImage()));
         human = game.NewHuman(HumanProgressBar, this.locations);
         enemy = game.NewEnemy(EnemyLabelImg, jLabel5, jLabel10, HealthEnemyLabel, jProgressBar2);

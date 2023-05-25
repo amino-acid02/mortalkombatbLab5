@@ -59,17 +59,6 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
-                <configuration>
-                    <mainClass>com.mycompany.maven_lab5_mortalkombat.Maven_Lab5_mortalkombat</mainClass>
-                  <includes>
-                    <include>./Results.xlsx</include>
-                  </includes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.5.0</version>
                 <configuration>

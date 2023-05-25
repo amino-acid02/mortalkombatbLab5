@@ -64,25 +64,25 @@ public class CharacterAction {
         {
             case 0:
                 enemy = enemyes[0];
-                img = new ImageIcon("IMGSource/Baraka.jpg");
+                img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/Baraka.jpg");
                 icon = fixer.getScaledImage(img.getImage());
                 label2.setText("Baraka (танк)");
                 break;
             case 1:
                 enemy = enemyes[1];
-                img = new ImageIcon("IMGSource/Sub-Zero.jpg");
+                img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/Sub-Zero.jpg");
                 icon =fixer.getScaledImage(img.getImage());
                 label2.setText("Sub-Zero (маг)");
                 break;
             case 2:
                 enemy = enemyes[2];
-                img = new ImageIcon("IMGSource/Liu_Kang.jpg");
+                img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/Liu_Kang.jpg");
                 icon = fixer.getScaledImage(img.getImage());
                 label2.setText("Liu Kang (боец)");
                 break;
             case 3:
                 enemy = enemyes[3];
-                img = new ImageIcon("IMGSource/Sonya_Blade.jpg");
+                img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/Sonya_Blade.jpg");
                 icon = fixer.getScaledImage(img.getImage());
                 label2.setText("Sonya Blade (солдат)");
                 break;
@@ -99,7 +99,7 @@ public class CharacterAction {
      */
     public Player ChooseBoss(JLabel label, JLabel label2, JLabel text, JLabel label3) 
     {
-        ImageIcon boss_img = new ImageIcon("IMGSource\\Shao_Kahn.jpg");
+        ImageIcon boss_img = new ImageIcon(System.getProperty("user.dir")+"/IMGSource/Shao_Kahn.jpg");
         ImageIcon icon1 = fixer.getScaledImage(boss_img.getImage());
         label2.setText("Shao Kahn (босс)");
         enemy = enemyes[4];

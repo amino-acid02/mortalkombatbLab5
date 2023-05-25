@@ -86,7 +86,8 @@ public class Game {
                 r2.createCell(2).setCellValue(results.get(i).getPoints());
             }
         }
-        File f = new File("Results.xlsx");
+        System.out.println(System.getProperty("user.dir"));
+        File f = new File(System.getProperty("user.dir")+"\\Results.xlsx");
         book.write(new FileOutputStream(f));
         book.close();
     }
@@ -103,7 +104,7 @@ public class Game {
     * @throws IOException
     */
     public void ReadFromExcel() throws IOException{
-        XSSFWorkbook book = new XSSFWorkbook("Results.xlsx");
+        XSSFWorkbook book = new XSSFWorkbook(System.getProperty("user.dir")+"\\Results.xlsx");
         XSSFSheet sh = book.getSheetAt(0);
         for (int i=1; i<=sh.getLastRowNum();i++) {
    
